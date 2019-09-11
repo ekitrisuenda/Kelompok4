@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE1DA"
+    tools:context=".CapcayGoreng">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/Capcay"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="250dp"
+                android:src="@drawable/capcay_goreng"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3.5"
+                android:layout_gravity="center"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capcay Goreng"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:text="@string/capcay_goreng"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_kritik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Kritik dan Saran"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="16sp"
+                app:met_floatingLabel="highlight" />
+
+            <Button
+                android:id="@+id/simpan_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:onClick="submit"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:layout_gravity="center"
+                android:text="Simpan"
+                tools:ignore="OnClick" />
+
+            <TextView
+                android:id="@+id/hasil_kritik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

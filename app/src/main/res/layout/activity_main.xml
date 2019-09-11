@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE1DA"
+    android:id="@+id/frame_container"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Resep Makanan"
+        android:textColor="#86AD33"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:onClick="home"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/home"
+        tools:ignore="OnClick" />
+
+    <ImageButton
+        android:id="@+id/kelompok"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:onClick="kelompok"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/info"
+        tools:ignore="OnClick" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Judul"
+        android:layout_marginBottom="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/Rendang"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/rendang_paha_ayam"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rendang Paha Ayam"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignTop="@id/Rendang"
+                android:layout_toRightOf="@id/Rendang"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btn_rendang"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Lihat"
+                android:onClick="rendang"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:layout_alignTop="@id/Rendang"
+                android:layout_toRightOf="@id/Rendang"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/cumisambal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cumi_sambal_hijau"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/Rendang"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cumi Sambal Hijau"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignTop="@id/cumisambal"
+                android:layout_toRightOf="@id/cumisambal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_cumisambal"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Lihat"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:onClick="cumisambal"
+                android:layout_alignTop="@id/cumisambal"
+                android:layout_toRightOf="@id/cumisambal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/Capcay"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/capcay_goreng"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/cumisambal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capcay Goreng"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignTop="@id/Capcay"
+                android:layout_toRightOf="@id/Capcay"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_capcay"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Lihat"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:onClick="capcay"
+                android:layout_alignTop="@id/Capcay"
+                android:layout_toRightOf="@id/Capcay"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/Oseng"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/oseng_kacang_panjang"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/Capcay"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oseng Kacang Panjang"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignTop="@id/Oseng"
+                android:layout_toRightOf="@id/Oseng"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_oseng"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Lihat"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:onClick="oseng"
+                android:layout_alignTop="@id/Oseng"
+                android:layout_toRightOf="@id/Oseng"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/Cumi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:src="@drawable/cumi_pedas_manis"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/Oseng"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cumi Pedas Manis"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignTop="@id/Cumi"
+                android:layout_toRightOf="@id/Cumi"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_cumi"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Lihat"
+                android:onClick="cumipedas"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:layout_alignTop="@id/Cumi"
+                android:layout_toRightOf="@id/Cumi"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/Pesmol"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pasmol_ikan_nila"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/Cumi"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesmol Ikan Nila"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignTop="@id/Pesmol"
+                android:layout_toRightOf="@id/Pesmol"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_pesmol"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Lihat"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:onClick="pesmol"
+                android:layout_alignTop="@id/Pesmol"
+                android:layout_toRightOf="@id/Pesmol"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/asem"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/asem_asem_daging"
+                android:layout_below="@+id/Pesmol"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asem-Asem Daging"
+                android:layout_alignTop="@+id/asem"
+                android:layout_toRightOf="@+id/asem"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/btn_asem"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Lihat"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:layout_alignTop="@id/asem"
+                android:layout_toRightOf="@id/asem"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                 />
+
+
+            <ImageView
+                android:id="@+id/beef"
+                android:src="@drawable/beef_teriyaki"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/asem"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beef Teriyaki"
+                android:layout_alignTop="@id/beef"
+                android:layout_toRightOf="@id/beef"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_beef"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Lihat"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:layout_alignTop="@id/beef"
+                android:layout_toRightOf="@id/beef"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                 />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

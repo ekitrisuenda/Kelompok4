@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/kayu"
+    tools:context=".IsiFavoriteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/Judul3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Makanan Favorite"
+        android:textColor="#86AD33"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Judul3">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/rendang"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/rendang_paha_ayam"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/rendang2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rendang"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="Rendang Paha Ayam"/>
+
+            <ImageView
+                android:id="@+id/cumi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cumi_pedas_manis"
+                android:layout_below="@id/rendang2"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/cumi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cumi"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="Cumi Pedas Manis"/>
+
+            <ImageView
+                android:id="@+id/asem"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/asem_asem_daging"
+                android:layout_below="@id/cumi2"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_below="@id/asem"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asem-Asem Dading"
+                android:textStyle="bold"
+                android:layout_marginBottom="40dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
